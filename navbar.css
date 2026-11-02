@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #FFAB00;
+    padding: 15px;
+    gap: 4%;
+    border: 5px solid black;
+}
+
+.navbar img {
+    display: block;
+    width: 16%;
+    height: auto;
+}
+
+.navbar a {
+    display: block;
+    width: 16%;
+}
+
+.navbar a img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 60%;
+    }
+
+    .navbar {
+        padding: 12px;
+        gap: 12px;
+    }
+
+    .navbar img
+    .navbar a {
+        width: 40%;
+    }
+
+    .navbar a img {
+        width: 100%;
+    }
+}
+.logo {
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+    background-position: center;
+}

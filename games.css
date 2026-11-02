@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("Images/home-background.jpg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.games-body {
+    background-image:url("Images/games-background.png");
+}
