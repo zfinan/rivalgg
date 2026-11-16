@@ -1,0 +1,864 @@
+* {
+    box-sizing: border-box; /* Include padding and borders in the stated size. */
+}
+
+/* Styles for body. */
+body {
+    margin: 0; /* Space outside the element. */
+    background: #101010; /* Background colour. */
+    color: #f7f5ee; /* Text colour. */
+    font-family: Arial, Helvetica, sans-serif; /* Try these fonts in order. */
+    font-size: 16px; /* Text size. */
+    line-height: 1.6; /* Height of each text line. */
+}
+
+/* Styles for a. */
+a {
+    color: inherit; /* Text colour. */
+    text-underline-offset: 5px; /* Distance between text and its underline. */
+}
+
+/* Styles for a:hover. Applied when the pointer is over the element. */
+a:hover {
+    color: #ffbf00; /* Text colour. */
+}
+
+/* Styles for a:focus-visible, summary:focus-visible. Makes focused controls visible. */
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #ffbf00; /* Focus outline without changing layout size. */
+    outline-offset: 5px; /* Space between an element and its outline. */
+}
+
+/* Styles for h1, h2, h3, p. */
+h1, h2, h3, p {
+    margin-top: 0; /* Space outside the top edge. */
+}
+
+/* Styles for h1. */
+h1 {
+    font-size: 56px; /* Text size. */
+    line-height: 1.08; /* Height of each text line. */
+    letter-spacing: -2px; /* Space between letters. */
+    margin-bottom: 24px; /* Space outside the bottom edge. */
+}
+
+/* Styles for h2. */
+h2 {
+    font-size: 30px; /* Text size. */
+    line-height: 1.2; /* Height of each text line. */
+    letter-spacing: -0.6px; /* Space between letters. */
+}
+
+/* Styles for h3. */
+h3 {
+    font-size: 21px; /* Text size. */
+    line-height: 1.3; /* Height of each text line. */
+}
+
+/* Styles for p, li. */
+p, li {
+    color: #c4c1b9; /* Text colour. */
+}
+
+/* Styles for header. */
+header {
+    border-bottom: 1px solid #36332c; /* Bottom border. */
+}
+
+/* Styles for .header-inner, main, .footer-inner. */
+.header-inner, main, .footer-inner {
+    width: 90%; /* Element width. */
+    max-width: 1120px; /* Largest allowed width. */
+    margin: 0 auto; /* Space outside the element. */
+}
+
+/* Styles for .header-inner. */
+.header-inner {
+    display: flex; /* How this element participates in the layout. */
+    align-items: center; /* Align children across the flex row or grid area. */
+    justify-content: space-between; /* Distribute space along the flex direction. */
+    gap: 28px; /* Space between layout items. */
+    min-height: 92px; /* Smallest allowed height. */
+}
+
+/* Styles for .logo. */
+.logo {
+    font-size: 32px; /* Text size. */
+    font-weight: bold; /* Thickness of the text. */
+    letter-spacing: -2px; /* Space between letters. */
+    text-decoration: none; /* Control underlines and other text decorations. */
+    white-space: nowrap; /* Control text wrapping. */
+}
+
+/* Styles for .logo span, h1 span. */
+.logo span, h1 span {
+    color: #ffbf00; /* Text colour. */
+}
+
+/* Styles for nav. */
+nav {
+    display: flex; /* How this element participates in the layout. */
+    flex-wrap: wrap; /* Allow flex items to move onto another line. */
+    gap: 22px; /* Space between layout items. */
+}
+
+/* Styles for nav a. */
+nav a {
+    font-size: 14px; /* Text size. */
+    text-decoration: none; /* Control underlines and other text decorations. */
+    padding: 10px 0; /* Space inside the element. */
+    border-bottom: 2px solid transparent; /* Bottom border. */
+}
+
+/* Styles for nav a[aria-current="page"]. Highlights the current navigation page. */
+nav a[aria-current="page"] {
+    color: #ffbf00; /* Text colour. */
+    border-color: #ffbf00; /* Border colour. */
+}
+
+/* Styles for .button. */
+.button {
+    display: inline-block; /* How this element participates in the layout. */
+    background: #ffbf00; /* Background colour. */
+    color: #171207; /* Text colour. */
+    padding: 13px 20px; /* Space inside the element. */
+    border: 1px solid #ffbf00; /* Border thickness, style and colour. */
+    font-weight: bold; /* Thickness of the text. */
+    text-decoration: none; /* Control underlines and other text decorations. */
+    border-radius: 4px; /* Round the corners. */
+}
+
+/* Styles for .button:hover. Applied when the pointer is over the element. */
+.button:hover {
+    background: #ffd65c; /* Background colour. */
+    color: #171207; /* Text colour. */
+}
+
+/* Styles for .section. */
+.section {
+    margin-bottom: 62px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .section-title. */
+.section-title {
+    display: flex; /* How this element participates in the layout. */
+    justify-content: space-between; /* Distribute space along the flex direction. */
+    gap: 20px; /* Space between layout items. */
+    margin-bottom: 24px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .section-title h2. */
+.section-title h2 {
+    margin-bottom: 0; /* Space outside the bottom edge. */
+}
+
+/* Styles for .section-title p. */
+.section-title p {
+    margin-bottom: 0; /* Space outside the bottom edge. */
+}
+
+/* Styles for .section-title .eyebrow. */
+.section-title .eyebrow {
+    margin-bottom: 12px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .cards. */
+.cards {
+    display: grid; /* How this element participates in the layout. */
+    grid-template-columns: repeat(3, 1fr); /* Set grid columns; fr means a share of available space. */
+    gap: 20px; /* Space between layout items. */
+}
+
+/* Styles for .card. */
+.card {
+    border: 1px solid #423a29; /* Border thickness, style and colour. */
+    background: #1c1b18; /* Background colour. */
+    padding: 28px; /* Space inside the element. */
+    border-radius: 8px; /* Round the corners. */
+    transition:transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+
+/* Styles for .card-number. */
+.card-number {
+    color: #bdb39f; /* Text colour. */
+    font-size: 12px; /* Text size. */
+    letter-spacing: 1.5px; /* Space between letters. */
+    margin-bottom: 32px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .text-link. */
+.text-link {
+    display: inline-block; /* How this element participates in the layout. */
+    margin-top: 12px; /* Space outside the top edge. */
+    font-size: 14px; /* Text size. */
+    font-weight: bold; /* Thickness of the text. */
+    color: #ffbf00; /* Text colour. */
+}
+
+.text-link:hover {
+     color: white;
+}
+/* Styles for .callout. */
+.callout {
+    display: flex; /* How this element participates in the layout. */
+    justify-content: space-between; /* Distribute space along the flex direction. */
+    align-items: center; /* Align children across the flex row or grid area. */
+    gap: 28px; /* Space between layout items. */
+    padding: 32px; /* Space inside the element. */
+    border-top: 1px solid #66522c; /* Top border. */
+    border-bottom: 1px solid #66522c; /* Bottom border. */
+    margin-bottom: 64px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .callout h2. */
+.callout h2 {
+    font-size: 26px; /* Text size. */
+}
+
+/* Styles for .callout p:last-child. */
+.callout p:last-child {
+    margin-bottom: 0; /* Space outside the bottom edge. */
+}
+
+/* Styles for .outline. */
+.outline {
+    background: transparent; /* Background colour. */
+    color: #ffbf00; /* Text colour. */
+    flex-shrink: 0; /* Control whether a flex item can shrink. */
+}
+
+/* Styles for footer. */
+footer {
+    border-top: 1px solid #36332c; /* Top border. */
+    padding: 30px 0; /* Space inside the element. */
+}
+
+/* Styles for .footer-inner. */
+.footer-inner {
+    display: flex; /* How this element participates in the layout. */
+    justify-content: space-between; /* Distribute space along the flex direction. */
+    align-items: center; /* Align children across the flex row or grid area. */
+    gap: 28px; /* Space between layout items. */
+}
+
+/* Styles for .footer-inner p, .footer-inner > a:last-child. */
+.footer-inner p, .footer-inner > a:last-child {
+    font-size: 12px; /* Text size. */
+    margin: 0; /* Space outside the element. */
+}
+
+/* Styles for .page-heading. */
+.page-heading {
+    padding: 60px 0 32px; /* Space inside the element. */
+}
+
+/* Styles for .intro. */
+.intro {
+    max-width: 670px; /* Largest allowed width. */
+    font-size: 18px; /* Text size. */
+}
+
+/* Styles for .tag. */
+.tag {
+    display: inline-block; /* How this element participates in the layout. */
+    font-size: 11px; /* Text size. */
+    font-weight: bold; /* Thickness of the text. */
+    letter-spacing: 1px; /* Space between letters. */
+    color: #ffbf00; /* Text colour. */
+    margin-bottom: 18px; /* Space outside the bottom edge. */
+}
+
+/* Styles for ul, ol. */
+ul, ol {
+    padding-left: 22px; /* Space inside the left edge. */
+}
+
+/* Styles for li. */
+li {
+    margin-bottom: 8px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .link-row. */
+.link-row {
+    display: flex; /* How this element participates in the layout. */
+    flex-wrap: wrap; /* Allow flex items to move onto another line. */
+    gap: 24px; /* Space between layout items. */
+}
+
+/* Styles for .notice. */
+.notice {
+    border-left: 3px solid #ffbf00; /* Left border. */
+    padding: 12px 18px; /* Space inside the element. */
+    background: #1c1b18; /* Background colour. */
+}
+
+/* Styles for details. */
+details {
+    border-top: 1px solid #51452e; /* Top border. */
+    margin: 18px 0; /* Space outside the element. */
+    padding: 14px 0; /* Space inside the element. */
+}
+
+/* Styles for summary. */
+summary {
+    cursor: pointer; /* Pointer appearance. */
+    font-weight: bold; /* Thickness of the text. */
+}
+
+/* Styles for details p, details ol, details ul. */
+details p, details ol, details ul {
+    margin-top: 16px; /* Space outside the top edge. */
+}
+
+/* Styles for :target. Applied to the destination of a #section link. */
+:target {
+    scroll-margin-top: 20px; /* Space above a target when scrolled into view. */
+}
+
+/* Styles for .reading. */
+.reading {
+    max-width: 700px; /* Largest allowed width. */
+}
+
+/* Styles for .skip-link. */
+.skip-link {
+    position: absolute; /* Positioning method. */
+    top: -100px; /* Distance from the top of the positioning area. */
+    left: 15px; /* Distance from its left edge. */
+    padding: 10px; /* Space inside the element. */
+    background: #ffbf00; /* Background colour. */
+    color: #101010; /* Text colour. */
+    z-index: 1; /* Stacking order for overlapping positioned elements. */
+}
+
+/* Styles for .skip-link:focus. Makes focused controls visible. */
+.skip-link:focus {
+    top: 10px; /* Distance from the top of the positioning area. */
+}
+
+/* Styles for .logo. */
+.logo {
+    display: block; /* How this element participates in the layout. */
+    flex-shrink: 0; /* Control whether a flex item can shrink. */
+    line-height: 0; /* Height of each text line. */
+}
+
+/* Styles for .logo img. */
+.logo img {
+    display: block; /* How this element participates in the layout. */
+    width: 210px; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+}
+
+/* Styles for .footer-inner .logo img. */
+.footer-inner .logo img {
+    width: 155px; /* Element width. */
+}
+
+/* Styles for img. */
+img {
+    max-width: 100%; /* Largest allowed width. */
+}
+
+/* Styles for .hero-copy, .card, .about-grid > *, .header-inner > *, .footer-inner > *. */
+.hero-copy, .card, .about-grid > *, .header-inner > *, .footer-inner > * {
+    min-width: 0; /* Smallest allowed width; zero lets layout items shrink. */
+}
+
+/* Styles for .card, .hero-copy, .event, .callout. */
+.card, .hero-copy, .event, .callout {
+    overflow-wrap: break-word; /* Break long words when needed to avoid overflow. */
+}
+
+/* Styles for a:focus, summary:focus. Makes focused controls visible. */
+a:focus, summary:focus {
+    outline: 3px solid #ffbf00; /* Focus outline without changing layout size. */
+    outline-offset: 5px; /* Space between an element and its outline. */
+}
+
+/* Styles for .section-title. */
+.section-title {
+    align-items: flex-end; /* Align children across the flex row or grid area. */
+}
+
+/* ==================================================
+   INDEX.HTML - HOMEPAGE
+   ================================================== */
+
+/* Styles for .hero. */
+.hero {
+    display: flex; /* How this element participates in the layout. */
+    align-items: center; /* Align children across the flex row or grid area. */
+    gap: 30px; /* Space between layout items. */
+    padding: 65px 0; /* Space inside the element. */
+}
+
+/* Styles for .hero-copy. */
+.hero-copy {
+    flex: 1; /* Let this item share the available flex space. */
+}
+
+/* Styles for .hero-copy > p:not(.eyebrow). */
+.hero-copy > p:not(.eyebrow) {
+    max-width: 450px; /* Largest allowed width. */
+    font-size: 18px; /* Text size. */
+}
+
+/* Styles for .hero img. */
+.hero img {
+    width: 46%; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+}
+
+/* Styles for .eyebrow. */
+.eyebrow {
+    font-size: 12px; /* Text size. */
+    letter-spacing: 2px; /* Space between letters. */
+    font-weight: bold; /* Thickness of the text. */
+    color: #ffbf00; /* Text colour. */
+    margin-bottom: 18px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .secondary-link. */
+.secondary-link {
+    display: inline-block; /* How this element participates in the layout. */
+    font-size: 14px; /* Text size. */
+    margin: 18px 0 0 18px; /* Space outside the element. */
+}
+
+/* Styles for .hero-art. */
+.hero-art {
+    width: 46%; /* Element width. */
+    margin: 0; /* Space outside the element. */
+    border: 1px solid #66522c; /* Border thickness, style and colour. */
+    border-radius: 8px; /* Round the corners. */
+    overflow: hidden; /* Control content extending outside the box. */
+    background: #171717; /* Background colour. */
+}
+
+/* Styles for .hero .hero-art img. */
+.hero .hero-art img {
+    display: block; /* How this element participates in the layout. */
+    width: 100%; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+}
+
+/* Styles for .hero-art figcaption. */
+.hero-art figcaption {
+    padding: 12px 18px; /* Space inside the element. */
+    color: #ffbf00; /* Text colour. */
+    font-size: 12px; /* Text size. */
+    letter-spacing: 1.5px; /* Space between letters. */
+}
+
+/* Styles for .game-strip. */
+.game-strip {
+    display: grid; /* How this element participates in the layout. */
+    grid-template-columns: repeat(5, 1fr); /* Set grid columns; fr means a share of available space. */
+    gap: 16px; /* Space between layout items. */
+}
+
+/* Styles for .game-tile. */
+.game-tile {
+    display: block; /* How this element participates in the layout. */
+    text-decoration: none; /* Control underlines and other text decorations. */
+    background: #1c1b18; /* Background colour. */
+    border: 1px solid #423a29; /* Border thickness, style and colour. */
+    border-radius: 6px; /* Round the corners. */
+    overflow: hidden; /* Control content extending outside the box. */
+}
+
+/* Styles for .game-tile:hover. Applied when the pointer is over the element. */
+.game-tile:hover {
+    border-color: #ffbf00; /* Border colour. */
+}
+
+/* Styles for .game-tile img. */
+.game-tile img {
+    display: block; /* How this element participates in the layout. */
+    width: 100%; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+}
+
+/* Styles for .game-tile span. */
+.game-tile span {
+    display: block; /* How this element participates in the layout. */
+    padding: 12px; /* Space inside the element. */
+    font-size: 14px; /* Text size. */
+    font-weight: bold; /* Thickness of the text. */
+}
+
+/* ==================================================
+   GAMES.HTML - GAME CARDS
+   ================================================== */
+
+/* Styles for .game h2. */
+.game h2 {
+    font-size: 27px; /* Text size. */
+}
+
+/* Styles for .game h3. */
+.game h3 {
+    font-size: 16px; /* Text size. */
+    margin-top: 28px; /* Space outside the top edge. */
+}
+
+/* Styles for .game-image. */
+.game-image {
+    display: block; /* How this element participates in the layout. */
+    width: 100%; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+    border-radius: 4px; /* Round the corners. */
+    margin-bottom: 24px; /* Space outside the bottom edge. */
+}
+
+/* Styles for .game:target. Applied to the destination of a #section link. */
+.game:target {
+    border-color: #ffbf00; /* Border colour. */
+}
+
+/* ==================================================
+   TOURNAMENTS.HTML - EVENTS AND RULES
+   ================================================== */
+
+/* Styles for .event. */
+.event {
+    display: flex; /* How this element participates in the layout. */
+    gap: 32px; /* Space between layout items. */
+    padding: 30px 0; /* Space inside the element. */
+    border-bottom: 1px solid #423a29; /* Bottom border. */
+}
+
+/* Styles for .event-label. */
+.event-label {
+    color: #ffbf00; /* Text colour. */
+    font-size: 40px; /* Text size. */
+    min-width: 90px; /* Smallest allowed width; zero lets layout items shrink. */
+    line-height: 1.2; /* Height of each text line. */
+}
+
+/* Styles for .event-label span. */
+.event-label span {
+    font-size: 14px; /* Text size. */
+    color: #c4c1b9; /* Text colour. */
+}
+
+/* Styles for .event > div:last-child. */
+.event > div:last-child {
+    flex: 1; /* Let this item share the available flex space. */
+    min-width: 0; /* Smallest allowed width; zero lets layout items shrink. */
+}
+
+/* Styles for .event-image. */
+.event-image {
+    display: block; /* How this element participates in the layout. */
+    width: 90px; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+    border-radius: 4px; /* Round the corners. */
+    margin-bottom: 18px; /* Space outside the bottom edge. */
+}
+
+/* ==================================================
+   TEAMS.HTML - TEAM CARDS
+   ================================================== */
+
+/* Styles for .teams-grid. */
+.teams-grid {
+    grid-template-columns: repeat(2, 1fr); /* Set grid columns; fr means a share of available space. */
+}
+
+/* Styles for .team-heading. */
+.team-heading {
+    display: flex; /* How this element participates in the layout. */
+    align-items: center; /* Align children across the flex row or grid area. */
+    gap: 18px; /* Space between layout items. */
+}
+
+/* Styles for .profile-icon. */
+.profile-icon {
+    width: 64px; /* Element width. */
+    height: auto; /* Element height; auto keeps image proportions. */
+    flex-shrink: 0; /* Control whether a flex item can shrink. */
+}
+
+/* Styles for .team-heading h2. */
+.team-heading h2 {
+    margin-bottom: 0; /* Space outside the bottom edge. */
+}
+
+/* Styles for .team-heading + p. */
+.team-heading + p {
+    margin-top: 20px; /* Space outside the top edge. */
+}
+
+/* ==================================================
+   LEADERBOARDS.HTML - STANDINGS TABLE
+   ================================================== */
+
+/* Styles for .table-wrap. */
+.table-wrap {
+    overflow-x: auto; /* Allow horizontal scrolling when needed. */
+}
+
+/* Styles for table. */
+table {
+    width: 100%; /* Element width. */
+    border-collapse: collapse; /* Merge neighbouring table borders. */
+    text-align: left; /* Horizontal text alignment. */
+}
+
+/* Styles for caption. */
+caption {
+    text-align: left; /* Horizontal text alignment. */
+    color: #c4c1b9; /* Text colour. */
+    padding: 12px 0; /* Space inside the element. */
+}
+
+/* Styles for th, td. */
+th, td {
+    border-bottom: 1px solid #423a29; /* Bottom border. */
+    padding: 18px; /* Space inside the element. */
+}
+
+/* Styles for thead. */
+thead {
+    background: #302719; /* Background colour. */
+    color: #ffbf00; /* Text colour. */
+}
+
+/* Styles for tbody tr:nth-child(even). */
+tbody tr:nth-child(even) {
+    background: #1c1b18; /* Background colour. */
+}
+
+/* Styles for tr:target. Applied to the destination of a #section link. */
+tr:target {
+    background: #493717; /* Background colour. */
+}
+
+/* ==================================================
+   ABOUT.HTML - INFORMATION AND FAQ LAYOUT
+   ================================================== */
+
+/* Styles for .about-grid. */
+.about-grid {
+    display: grid; /* How this element participates in the layout. */
+    grid-template-columns: 1.2fr 1fr; /* Set grid columns; fr means a share of available space. */
+    align-items: start; /* Align children across the flex row or grid area. */
+    gap: 48px; /* Space between layout items. */
+}
+
+/* Styles for .reading h2:not(:first-child). */
+.reading h2:not(:first-child) {
+    margin-top: 38px; /* Space outside the top edge. */
+}
+
+/* ==================================================
+   RESPONSIVE - ALL PAGES AT SMALLER WIDTHS
+   ================================================== */
+
+/* Apply these changes only when the browser viewport is 900px wide or narrower. */
+@media (max-width: 900px) {
+    /* Styles for .header-inner. */
+    .header-inner {
+        flex-direction: column; /* Arrange flex items in a row or column. */
+        align-items: flex-start; /* Align children across the flex row or grid area. */
+        gap: 6px; /* Space between layout items. */
+        padding: 16px 0; /* Space inside the element. */
+    }
+
+    /* Styles for nav. */
+    nav {
+        gap: 18px; /* Space between layout items. */
+    }
+
+    /* Styles for h1. */
+    h1 {
+        font-size: 44px; /* Text size. */
+    }
+
+    /* Styles for .hero. */
+    .hero {
+        gap: 20px; /* Space between layout items. */
+    }
+
+    /* Styles for .cards. */
+    .cards {
+        grid-template-columns: 1fr; /* Set grid columns; fr means a share of available space. */
+    }
+
+    /* Styles for .teams-grid. */
+    .teams-grid {
+        grid-template-columns: repeat(2, 1fr); /* Set grid columns; fr means a share of available space. */
+    }
+
+    /* Styles for .callout, .footer-inner. */
+    .callout, .footer-inner {
+        flex-direction: column; /* Arrange flex items in a row or column. */
+        align-items: flex-start; /* Align children across the flex row or grid area. */
+    }
+
+}
+
+/* Apply these changes only when the browser viewport is 600px wide or narrower. */
+@media (max-width: 600px) {
+    /* Styles for h1. */
+    h1 {
+        font-size: 38px; /* Text size. */
+        letter-spacing: -1px; /* Space between letters. */
+    }
+
+    /* Styles for h2. */
+    h2 {
+        font-size: 26px; /* Text size. */
+    }
+
+    /* Styles for nav. */
+    nav {
+        gap: 8px 18px; /* Space between layout items. */
+    }
+
+    /* Styles for .hero. */
+    .hero {
+        flex-direction: column; /* Arrange flex items in a row or column. */
+        align-items: flex-start; /* Align children across the flex row or grid area. */
+        padding: 38px 0; /* Space inside the element. */
+    }
+
+    /* Styles for .hero img. */
+    .hero img {
+        width: 100%; /* Element width. */
+        max-width: 440px; /* Largest allowed width. */
+    }
+
+    /* Styles for .section-title. */
+    .section-title {
+        display: block; /* How this element participates in the layout. */
+    }
+
+    /* Styles for .section-title > p. */
+    .section-title > p {
+        margin-top: 14px; /* Space outside the top edge. */
+    }
+
+    /* Styles for .teams-grid, .about-grid. */
+    .teams-grid, .about-grid {
+        grid-template-columns: 1fr; /* Set grid columns; fr means a share of available space. */
+    }
+
+    /* Styles for .page-heading. */
+    .page-heading {
+        padding-top: 38px; /* Space inside the top edge. */
+    }
+
+    /* Styles for .card, .callout. */
+    .card, .callout {
+        padding: 24px; /* Space inside the element. */
+    }
+
+    /* Styles for .event. */
+    .event {
+        gap: 15px; /* Space between layout items. */
+    }
+
+    /* Styles for .event-label. */
+    .event-label {
+        min-width: 45px; /* Smallest allowed width; zero lets layout items shrink. */
+        font-size: 28px; /* Text size. */
+    }
+
+    /* Styles for th, td. */
+    th, td {
+        padding: 12px 10px; /* Space inside the element. */
+    }
+
+    /* Styles for .secondary-link. */
+    .secondary-link {
+        margin-left: 0; /* Space outside the left edge. */
+        margin-right: 18px; /* Space outside the right edge. */
+    }
+
+}
+
+/* Apply these changes only when the browser viewport is 900px wide or narrower. */
+@media (max-width: 900px) {
+    /* Styles for .game-strip. */
+    .game-strip {
+        grid-template-columns: repeat(3, 1fr); /* Set grid columns; fr means a share of available space. */
+    }
+
+}
+
+/* Apply these changes only when the browser viewport is 600px wide or narrower. */
+@media (max-width: 600px) {
+    /* Styles for .logo img. */
+    .logo img {
+        width: 185px; /* Element width. */
+    }
+
+    /* Styles for .hero-art. */
+    .hero-art {
+        width: 100%; /* Element width. */
+        max-width: 440px; /* Largest allowed width. */
+    }
+
+    /* Styles for .game-strip. */
+    .game-strip {
+        grid-template-columns: repeat(2, 1fr); /* Set grid columns; fr means a share of available space. */
+    }
+
+    /* Styles for .event-image. */
+    .event-image {
+        width: 45px; /* Element width. */
+    }
+
+}
+
+/* Apply these changes only when the browser is 380px wide or narrower. */
+@media (max-width: 380px) {
+    /* Styles for h1. */
+    h1 {
+        font-size: 32px; /* Text size. */
+    }
+
+    /* Styles for .card, .callout. */
+    .card, .callout {
+        padding: 18px; /* Space inside the element. */
+    }
+
+    /* Styles for .team-heading. */
+    .team-heading {
+        flex-wrap: wrap; /* Allow flex items to move onto another line. */
+    }
+
+}
+
+/* Keep the game links spaced out and able to wrap on smaller screens. */
+.wagers-page .link-row {
+    gap: 12px 24px;
+    margin-top: 24px;
+}
+
+/* Use gold to emphasise the prize pool within each wager card. */
+.wagers-page .card h2 {
+    color: #ffbf00;
+    font-size: 30px;
+}
+
+/* Keep long match descriptions inside the card. */
+.wagers-page .card {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+/* Reduce price text slightly on narrow screens. */
+@media (max-width: 600px) {
+    .wagers-page .card h2 {
+        font-size: 26px;
+    }
+}
